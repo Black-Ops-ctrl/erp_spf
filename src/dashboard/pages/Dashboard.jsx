@@ -10,6 +10,9 @@ const Dashboard = () => {
     if (moduleTitle === "Maintenance") {
       navigate("/maintenance");
     }
+     if (moduleTitle === "Transactions") {
+      navigate("/transaction");
+    }
   };
 
   return (
