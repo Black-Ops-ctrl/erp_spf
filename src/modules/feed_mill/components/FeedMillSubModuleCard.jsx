@@ -1,12 +1,11 @@
-// src/modules/transaction/components/TransactionSubModuleCard.jsx
 import { useState } from "react";
 
-const TransactionSubModuleCard = ({ title, icon }) => {
+const FeedMillSubModuleCard = ({ title, icon }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div 
-      className="bg-primary rounded-xl border-2 border-gray-100 py-6 px-2 flex flex-col items-center justify-center text-center hover:shadow-lg transition-all duration-300 cursor-pointer group"
+      className="bg-primary rounded-xl border-2 border-gray-200 py-6 px-2 flex flex-col items-center justify-center text-center hover:shadow-lg transition-all duration-300 cursor-pointer group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -31,4 +30,4 @@ const TransactionSubModuleCard = ({ title, icon }) => {
   );
 };
 
-export default TransactionSubModuleCard;
+export default FeedMillSubModuleCard;

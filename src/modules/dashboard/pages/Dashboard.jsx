@@ -19,6 +19,12 @@ const Dashboard = () => {
     if (moduleTitle === "Plant") {
       navigate("/plant");
     }
+    if (moduleTitle === "Shops") {
+      navigate("/shops");
+    }
+    if (moduleTitle === "Reports") {
+      navigate("/reports");
+    }
   };
 
   return (

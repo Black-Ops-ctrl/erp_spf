@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TransactionSubModuleCard = ({ title, icon }) => {
+const ShopsSubModuleCard = ({ title, icon }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -30,4 +30,4 @@ const TransactionSubModuleCard = ({ title, icon }) => {
   );
 };
 
-export default TransactionSubModuleCard;
+export default ShopsSubModuleCard;

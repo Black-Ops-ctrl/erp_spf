@@ -15,6 +15,7 @@ export default {
         grayColorOne: "#EAEFEF",
         lightGrayColor: "#F8F8F8",
         redColor: "#E52020",
+        blueColor: "#3A9AFF",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

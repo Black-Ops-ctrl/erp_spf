@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import DashboardLayout from "../../dashboard/layout/DashboardLayout"; 
 import Header from "../../dashboard/components/Header";
-import TransactionSubModuleCard from "../components/FeedMillSubModuleCard";
+import FeedMillSubModuleCard from "../components/FeedMillSubModuleCard";
 import backIcon from "../../../assets/icons/btn_back.png";
 import generalLedgerIcon from "../../../assets/icons/maintenance_icons/general_ledger.png";
 import cashManagementIcon from "../../../assets/icons/transaction_icons/cash_management.png";
@@ -54,11 +54,11 @@ const subModules = [
     title: "Gate Office",
     icon: gateOfficeIcon, 
   },
-   {
+  {
     title: "Costing",
     icon: costingIcon, 
   },
-{
+  {
     title: "Production",
     icon: productionIcon, 
   },
@@ -68,7 +68,7 @@ const subModules = [
   },
 ];
 
-const Transaction = () => {
+const FeedMill = () => {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
@@ -107,7 +107,7 @@ const Transaction = () => {
           <div className="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 gap-3">
             {subModules.map((mod, index) => (
               <div key={index} onClick={() => handleSubModuleClick(mod.title)}>
-                <TransactionSubModuleCard {...mod} />
+                <FeedMillSubModuleCard {...mod} />
               </div>
             ))}
           </div>
@@ -117,4 +117,4 @@ const Transaction = () => {
   );
 };
 
-export default Transaction;
+export default FeedMill;

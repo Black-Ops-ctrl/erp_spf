@@ -47,7 +47,7 @@ const Header = () => {
           <h1 className="text-base font-semibold font-sans text-secondary truncate">
             Sabir's Poultry (Pvt.) Ltd.
           </h1>
-          <p className="text-tiny1 font-semibold font-inter text-redColor">
+          <p className="text-sm font-semibold font-inter text-blueColor">
             Meta ERP
           </p>
         </div>
@@ -93,7 +93,7 @@ const Header = () => {
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 w-56 bg-primary rounded-lg shadow-lg border border-gray-200 py-2 z-50 animate-fade-in-up">
               {/* User Info Section */}
-              <div className="px-4 py-3 border-b border-gray-100">
+              <div className="px-4 py-3 border-b border-gray-200">
                 <div className="flex flex-col">
                   <p className="text-sm font-semibold font-sans text-secondary break-words">
                     Admin
