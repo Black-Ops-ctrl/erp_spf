@@ -54,7 +54,7 @@ const Dashboard = () => {
             href="https://metasage.net/"
             target="_blank"
             rel="noopener noreferrer"
-           className="text-grayColor text-md font-medium inline-flex items-center gap-1 group"
+           className="text-gray-400 text-sm font-medium inline-flex items-center gap-1 group"
           > Powered by MetaSage
           </a>
         </div>

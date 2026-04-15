@@ -43,14 +43,17 @@ const Auditors = () => {
             />
           </button>
           
-          <h2 className="text-lg font-[600] font-poppins text-redColor">
+          <h2 
+            onClick={handleBackClick}
+            className="text-lg font-[600] font-poppins text-redColor cursor-pointer hover:opacity-80 transition-opacity duration-200"
+          >
             Auditors
           </h2>
         </div>
 
         {/* Sub Modules Grid */}
         <div className="animate-fade-in-up-slow">
-          <div className="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-3">
             {subModules.map((mod, index) => (
               <div key={index} onClick={() => handleSubModuleClick(mod.title)}>
                 <AuditorsSubModuleCard {...mod} />

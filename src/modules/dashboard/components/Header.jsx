@@ -127,7 +127,7 @@ const Header = () => {
         {/* Logout Button */}
         <button
           onClick={handleLogout}
-          className="flex items-center gap-1 px-[10px] py-[6px] rounded-full bg-redColor text-primary font-helvetica text-sm hover:bg-red-700 transition-colors"
+          className="flex items-center gap-1 px-[10px] py-[6px] rounded-md bg-redColor text-primary font-helvetica text-sm hover:bg-red-700 transition-colors"
         >
           <img 
             src={logoutIcon} 
