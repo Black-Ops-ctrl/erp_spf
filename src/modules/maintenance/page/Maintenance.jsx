@@ -1,15 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import DashboardLayout from "../../../layout/DashboardLayout";
-import Header from "../../../dashboard/components/Header";
+import DashboardLayout from "../../dashboard/layout/DashboardLayout"; 
+import Header from "../../dashboard/components/Header";
 import MaintenanceSubModuleCard from "../components/MaintenanceSubModuleCard";
 import backIcon from "../../../assets/icons/btn_back.png";
-
-// Import maintenance sub-module icons
 import generalLedgerIcon from "../../../assets/icons/maintenance_icons/general_ledger.png";
 import salesIcon from "../../../assets/icons/maintenance_icons/sales.png";
 import accountPayableIcon from "../../../assets/icons/maintenance_icons/account_payable.png";
-import purchaseIcon from "../../../assets/icons/maintenance_icons/purcahse.png";
+import purchaseIcon from "../../../assets/icons/maintenance_icons/purchase.png";
 import inventoryIcon from "../../../assets/icons/maintenance_icons/inventory.png";
 import fixAssetIcon from "../../../assets/icons/maintenance_icons/fix_asset.png";
 import administrationIcon from "../../../assets/icons/maintenance_icons/administration.png";
@@ -80,13 +78,13 @@ const Maintenance = () => {
           </button>
           
           <h2 className="text-lg font-[600] font-poppins text-redColor">
-            Maintenance Module
+            Maintenance 
           </h2>
         </div>
 
         {/* Sub Modules Grid */}
         <div className="animate-fade-in-up-slow">
-          <div className="grid grid-cols-2 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 gap-4">
             {subModules.map((mod, index) => (
               <div key={index} onClick={() => handleSubModuleClick(mod.title)}>
                 <MaintenanceSubModuleCard {...mod} />

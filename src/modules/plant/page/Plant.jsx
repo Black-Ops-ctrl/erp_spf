@@ -2,27 +2,21 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import DashboardLayout from "../../dashboard/layout/DashboardLayout"; 
 import Header from "../../dashboard/components/Header";
-import TransactionSubModuleCard from "../components/TransactionSubModuleCard";
+import TransactionSubModuleCard from "../components/PlantSubModuleCard";
 import backIcon from "../../../assets/icons/btn_back.png";
 import generalLedgerIcon from "../../../assets/icons/maintenance_icons/general_ledger.png";
 import cashManagementIcon from "../../../assets/icons/transaction_icons/cash_management.png";
-import accountsReceiveableIcon from "../../../assets/icons/transaction_icons/accounts_receiveable.png";
+import procurementIcon from "../../../assets/icons/plant/procurement.png";
 import accountPayableIcon from "../../../assets/icons/maintenance_icons/account_payable.png";
-import purchaseIcon from "../../../assets/icons/maintenance_icons/purchase.png";
-import purchaseModuleIcon from "../../../assets/icons/transaction_icons/purchase_module.png";
-import feedMillIcon from "../../../assets/icons/modules/feed_mill.png";
-import fixAssetIcon from "../../../assets/icons/maintenance_icons/fix_asset.png";
+import productionIcon from "../../../assets/icons/transaction_icons/production.png";
 import inventoryIcon from "../../../assets/icons/maintenance_icons/inventory.png";
 import salesIcon from "../../../assets/icons/maintenance_icons/sales.png";
-import salesLayerIcon from "../../../assets/icons/transaction_icons/sales_layer.png";
+import stockMovementIcon from "../../../assets/icons/plant/stock_movement.png";
+import manualGatepassIcon from "../../../assets/icons/plant/manual_gatepass.png";
+import accountsReceiveableIcon from "../../../assets/icons/transaction_icons/accounts_receiveable.png";
 import gateOfficeIcon from "../../../assets/icons/transaction_icons/gate_office.png";
-import productionIcon from "../../../assets/icons/transaction_icons/production.png";
-import layerProductionIcon from "../../../assets/icons/transaction_icons/layer_production.png";
-import importIcon from "../../../assets/icons/transaction_icons/import.png";
-import hrPayrollIcon from "../../../assets/icons/maintenance_icons/hr_payroll.png";
-import appraisalIcon from "../../../assets/icons/transaction_icons/appraisal.png";
-import powerIcon from "../../../assets/icons/transaction_icons/power.png";
-import plantMaintenanceIcon from "../../../assets/icons/transaction_icons/plant_maintenance.png";
+import costingIcon from "../../../assets/icons/feed_mill/costing.png";
+import crateManagementIcon from "../../../assets/icons/plant/crate_management.png";
 import projectManagementIcon from "../../../assets/icons/transaction_icons/project-management.png";
 
 const subModules = [
@@ -35,28 +29,16 @@ const subModules = [
     icon: cashManagementIcon, 
   },
   {
-    title: "Accounts Receiveable",
-    icon: accountsReceiveableIcon,
+    title: "Procurement",
+    icon: procurementIcon, 
   },
   {
     title: "Account Payable",
     icon: accountPayableIcon,
   },
   {
-    title: "Purchase",
-    icon: purchaseIcon,
-  },
-  {
-    title: "Purchase Module",
-    icon: purchaseModuleIcon,
-  },
-  {
-    title: "Feed Mill",
-    icon: feedMillIcon, 
-  },
-  {
-    title: "Fix Asset",
-    icon: fixAssetIcon,
+    title: "Production",
+    icon: productionIcon, 
   },
   {
     title: "Inventory",
@@ -67,40 +49,28 @@ const subModules = [
     icon: salesIcon,
   },
   {
-    title: "Sales Layer",
-    icon: salesLayerIcon, 
+    title: "Stock Movement",
+    icon: stockMovementIcon,
+  },
+  {
+    title: "Manual Gate Pass",
+    icon: manualGatepassIcon,
+  },
+  {
+    title: "Accounts Receiveable",
+    icon: accountsReceiveableIcon,
   },
   {
     title: "Gate Office",
     icon: gateOfficeIcon, 
   },
-{
-    title: "Production",
-    icon: productionIcon, 
-  },
   {
-    title: "Layer Production",
-    icon: layerProductionIcon, 
+    title: "Costing",
+    icon: costingIcon, 
   },
-  {
-    title: "Imports",
-    icon: importIcon, 
-  },
-  {
-    title: "HR & Payroll",
-    icon: hrPayrollIcon,
-  },
-  {
-    title: "Appraisal",
-    icon: appraisalIcon, 
-  },
-  {
-    title: "Power",
-    icon: powerIcon,
-  },
-  {
-    title: "Plant Maintenance",
-    icon: plantMaintenanceIcon, 
+   {
+    title: "Crate Management",
+    icon: crateManagementIcon, 
   },
   {
     title: "Project Management",
@@ -138,7 +108,7 @@ const Transaction = () => {
           </button>
           
           <h2 className="text-lg font-[600] font-poppins text-redColor">
-            Transactions
+            Plant
           </h2>
         </div>
 

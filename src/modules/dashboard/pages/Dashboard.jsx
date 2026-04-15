@@ -1,4 +1,4 @@
-import DashboardLayout from "../../layout/DashboardLayout";
+import DashboardLayout from "../layout/DashboardLayout";
 import Header from "../components/Header";
 import ModuleGrid from "../components/ModuleGrid";
 import { useNavigate } from "react-router-dom";
@@ -10,8 +10,14 @@ const Dashboard = () => {
     if (moduleTitle === "Maintenance") {
       navigate("/maintenance");
     }
-     if (moduleTitle === "Transactions") {
+    if (moduleTitle === "Transactions") {
       navigate("/transaction");
+    }
+    if (moduleTitle === "Feed Mill") {
+      navigate("/feedmill");
+    }
+    if (moduleTitle === "Plant") {
+      navigate("/plant");
     }
   };
 

@@ -1,15 +1,14 @@
 import ModuleCard from "./ModuleCard";
-
-import maintenanceIcon from "../../assets/icons/modules/maintenance.png";
-import transactionsIcon from "../../assets/icons/modules/transactions.png";
-import feedMillIcon from "../../assets/icons/modules/feed_mill.png";
-import plantIcon from "../../assets/icons/modules/plant.png";
-import shopIcon from "../../assets/icons/modules/shop.png";
-import reportsIcon from "../../assets/icons/modules/reports.png";
-import transportIcon from "../../assets/icons/modules/transport.png";
-import utilitiesIcon from "../../assets/icons/modules/utilities.png";
-import auditorsIcon from "../../assets/icons/modules/auditors.png";
-
+import maintenanceIcon from "../../../assets/icons/modules/maintenance.png";
+import transactionsIcon from "../../../assets/icons/modules/transactions.png";
+import feedMillIcon from "../../../assets/icons/modules/feed_mill.png";
+import plantIcon from "../../../assets/icons/modules/plant.png";
+import shopIcon from "../../../assets/icons/modules/shop.png";
+import reportsIcon from "../../../assets/icons/modules/reports.png";
+import transportIcon from "../../../assets/icons/modules/transport.png";
+import utilitiesIcon from "../../../assets/icons/modules/utilities.png";
+import auditorsIcon from "../../../assets/icons/modules/auditors.png";
+import securityIcon from "../../../assets/icons/modules/security.png";
 const modules = [
   {
     title: "Maintenance",
@@ -46,6 +45,10 @@ const modules = [
   {
     title: "Auditors",
     icon: auditorsIcon,
+  },
+  {
+    title: "Security",
+    icon: securityIcon,
   },
 ];
 

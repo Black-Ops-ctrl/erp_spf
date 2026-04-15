@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import logo from "../../assets/images/logo_sabir.png";
-import avatar from "../../assets/images/avatar.png";
-import logoutIcon from "../../assets/icons/btn_logout.png";
+import logo from "../../../assets/images/logo_sabir.png"; 
+import avatar from "../../../assets/images/avatar.png";
+import logoutIcon from "../../../assets/icons/btn_logout.png"; 
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

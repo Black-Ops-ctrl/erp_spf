@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/images/bg_image_one.png";
+import bgImage from "../../../assets/images/bg_image_one.png"; 
 
 const DashboardLayout = ({ children }) => {
   return (

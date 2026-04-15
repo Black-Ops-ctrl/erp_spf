@@ -2,27 +2,19 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import DashboardLayout from "../../dashboard/layout/DashboardLayout"; 
 import Header from "../../dashboard/components/Header";
-import TransactionSubModuleCard from "../components/TransactionSubModuleCard";
+import TransactionSubModuleCard from "../components/FeedMillSubModuleCard";
 import backIcon from "../../../assets/icons/btn_back.png";
 import generalLedgerIcon from "../../../assets/icons/maintenance_icons/general_ledger.png";
 import cashManagementIcon from "../../../assets/icons/transaction_icons/cash_management.png";
 import accountsReceiveableIcon from "../../../assets/icons/transaction_icons/accounts_receiveable.png";
 import accountPayableIcon from "../../../assets/icons/maintenance_icons/account_payable.png";
 import purchaseIcon from "../../../assets/icons/maintenance_icons/purchase.png";
-import purchaseModuleIcon from "../../../assets/icons/transaction_icons/purchase_module.png";
-import feedMillIcon from "../../../assets/icons/modules/feed_mill.png";
-import fixAssetIcon from "../../../assets/icons/maintenance_icons/fix_asset.png";
+import feedDeliverIcon from "../../../assets/icons/feed_mill/feed_deliver.png";
 import inventoryIcon from "../../../assets/icons/maintenance_icons/inventory.png";
 import salesIcon from "../../../assets/icons/maintenance_icons/sales.png";
-import salesLayerIcon from "../../../assets/icons/transaction_icons/sales_layer.png";
 import gateOfficeIcon from "../../../assets/icons/transaction_icons/gate_office.png";
+import costingIcon from "../../../assets/icons/feed_mill/costing.png";
 import productionIcon from "../../../assets/icons/transaction_icons/production.png";
-import layerProductionIcon from "../../../assets/icons/transaction_icons/layer_production.png";
-import importIcon from "../../../assets/icons/transaction_icons/import.png";
-import hrPayrollIcon from "../../../assets/icons/maintenance_icons/hr_payroll.png";
-import appraisalIcon from "../../../assets/icons/transaction_icons/appraisal.png";
-import powerIcon from "../../../assets/icons/transaction_icons/power.png";
-import plantMaintenanceIcon from "../../../assets/icons/transaction_icons/plant_maintenance.png";
 import projectManagementIcon from "../../../assets/icons/transaction_icons/project-management.png";
 
 const subModules = [
@@ -47,16 +39,8 @@ const subModules = [
     icon: purchaseIcon,
   },
   {
-    title: "Purchase Module",
-    icon: purchaseModuleIcon,
-  },
-  {
-    title: "Feed Mill",
-    icon: feedMillIcon, 
-  },
-  {
-    title: "Fix Asset",
-    icon: fixAssetIcon,
+    title: "Feed Deliver",
+    icon: feedDeliverIcon, 
   },
   {
     title: "Inventory",
@@ -67,40 +51,16 @@ const subModules = [
     icon: salesIcon,
   },
   {
-    title: "Sales Layer",
-    icon: salesLayerIcon, 
-  },
-  {
     title: "Gate Office",
     icon: gateOfficeIcon, 
+  },
+   {
+    title: "Costing",
+    icon: costingIcon, 
   },
 {
     title: "Production",
     icon: productionIcon, 
-  },
-  {
-    title: "Layer Production",
-    icon: layerProductionIcon, 
-  },
-  {
-    title: "Imports",
-    icon: importIcon, 
-  },
-  {
-    title: "HR & Payroll",
-    icon: hrPayrollIcon,
-  },
-  {
-    title: "Appraisal",
-    icon: appraisalIcon, 
-  },
-  {
-    title: "Power",
-    icon: powerIcon,
-  },
-  {
-    title: "Plant Maintenance",
-    icon: plantMaintenanceIcon, 
   },
   {
     title: "Project Management",
@@ -138,7 +98,7 @@ const Transaction = () => {
           </button>
           
           <h2 className="text-lg font-[600] font-poppins text-redColor">
-            Transactions
+            Feed Mill
           </h2>
         </div>
 
