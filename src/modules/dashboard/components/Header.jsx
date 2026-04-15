@@ -48,7 +48,7 @@ const Header = () => {
             Sabir's Poultry (Pvt.) Ltd.
           </h1>
           <p className="text-tiny1 font-semibold font-inter text-redColor">
-            ERP System
+            Meta ERP
           </p>
         </div>
       </div>
