@@ -25,16 +25,38 @@ const Dashboard = () => {
     if (moduleTitle === "Reports") {
       navigate("/reports");
     }
+    if (moduleTitle === "Transport") {
+      navigate("/transport");
+    }
+    // if (moduleTitle === "Utilities") {
+    //   navigate("/utilities");
+    // }
+    if (moduleTitle === "Auditors") {
+      navigate("/auditors");
+    }
   };
 
   return (
     <DashboardLayout>
       <Header />
 
-      <div className="px-2 sm:px-2 md:px-4 lg:px-6">
-        {/* Module Grid with animation */}
-        <div className="animate-fade-in-up-slow">
-          <ModuleGrid onModuleClick={handleModuleClick} />
+      <div className="flex flex-col" style={{ minHeight: 'calc(100vh - 120px)' }}>
+        <div className="flex-1 px-2 sm:px-2 md:px-4 lg:px-6">
+          {/* Module Grid with animation */}
+          <div className="animate-fade-in-up-slow">
+            <ModuleGrid onModuleClick={handleModuleClick} />
+          </div>
+        </div>
+
+        {/* Footer Link - Bottom Center */}
+        <div className="py-6 text-center">
+          <a
+            href="https://metasage.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+           className="text-grayColor text-md font-medium inline-flex items-center gap-1 group"
+          > Powered by MetaSage
+          </a>
         </div>
       </div>
     </DashboardLayout>
