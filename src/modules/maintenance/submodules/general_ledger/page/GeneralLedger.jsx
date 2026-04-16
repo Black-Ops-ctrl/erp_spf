@@ -80,6 +80,39 @@ const GeneralLedger = () => {
     if (categoryTitle === "Fiscal Year") {
     navigate("/maintenance/general-ledger/fiscal-year");
   }
+   if (categoryTitle === "Fiscal Year Close") {
+    navigate("/maintenance/general-ledger/fiscal-year-close");
+  }
+  if (categoryTitle === "Fiscal Year Reopen") {
+    navigate("/maintenance/general-ledger/fiscal-year-reopen");
+  }
+  if (categoryTitle === "GL Periods") {
+    navigate("/maintenance/general-ledger/gl-periods");
+  }
+  if (categoryTitle === "Branch") {
+    navigate("/maintenance/general-ledger/branch");
+  }
+  if (categoryTitle === "Balance Sheet") {
+    navigate("/maintenance/general-ledger/balance-sheet");
+  }
+  if (categoryTitle === "Company") {
+    navigate("/maintenance/general-ledger/company");
+  }
+  if (categoryTitle === "Upload Chart of Account") {
+    navigate("/maintenance/general-ledger/upload-chart-of-account");
+  }
+  if (categoryTitle === "Chart of Account") {
+    navigate("/maintenance/general-ledger/chart-of-account");
+  }
+  if (categoryTitle === "Banks") {
+    navigate("/maintenance/general-ledger/banks");
+  }
+  if (categoryTitle === "Sub Account Code") {
+    navigate("/maintenance/general-ledger/sub-account-code");
+  }
+  if (categoryTitle === "Party Opening Balances") {
+    navigate("/maintenance/general-ledger/party-opening-balances");
+  }
   };
 
   return (

@@ -11,6 +11,7 @@ import Utilities from "../modules/utilities/page/Utilities";
 import Auditors from "../modules/auditors/page/Auditors";
 import GeneralLedger from "../modules/maintenance/submodules/general_ledger/page/GeneralLedger";
 import Fiscal_Year from "../modules/maintenance/submodules/general_ledger/categories/fiscal_year/Fiscal_Year";
+import FiscalYearClose from "../modules/maintenance/submodules/general_ledger/categories/fiscal_year_close/Fiscal_Year_Close";
 
 const AppRoutes = () => {
   return (
@@ -27,6 +28,8 @@ const AppRoutes = () => {
       <Route path="/auditors" element={<Auditors />} />
       <Route path="/maintenance/general-ledger" element={<GeneralLedger />} />
       <Route path="/maintenance/general-ledger/fiscal-year" element={<Fiscal_Year />} />
+      <Route path="/maintenance/general-ledger/fiscal-year-close" element={<FiscalYearClose />} />
+
     </Routes>
   );
 };

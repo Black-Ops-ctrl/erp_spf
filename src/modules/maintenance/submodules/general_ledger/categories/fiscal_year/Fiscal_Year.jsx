@@ -53,7 +53,6 @@ const Fiscal_Year = () => {
 
   if (!isOpen) return null;
 
-  // Determine border color based on validation
   const getBorderColor = () => {
     if (error) return "border-red-500";
     if (fiscalYear.length === 4) return "border-green-500";
