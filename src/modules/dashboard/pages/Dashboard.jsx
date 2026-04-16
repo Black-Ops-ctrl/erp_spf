@@ -28,9 +28,9 @@ const Dashboard = () => {
     if (moduleTitle === "Transport") {
       navigate("/transport");
     }
-    // if (moduleTitle === "Utilities") {
-    //   navigate("/utilities");
-    // }
+    if (moduleTitle === "Utilities") {
+      navigate("/utilities");
+    }
     if (moduleTitle === "Auditors") {
       navigate("/auditors");
     }

@@ -1,4 +1,3 @@
-// src/routes/AppRoutes.jsx
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../modules/dashboard/pages/Dashboard";
 import Maintenance from "../modules/maintenance/page/Maintenance";
@@ -8,8 +7,10 @@ import Plant from "../modules/plant/page/Plant";
 import Shops from "../modules/shops/page/Shops"; 
 import Reports from "../modules/reports/page/Reports";
 import Transport from "../modules/transport/page/Transport";
-// import Utilities from "../modules/utilities/page/Utilities";
+import Utilities from "../modules/utilities/page/Utilities";
 import Auditors from "../modules/auditors/page/Auditors";
+import GeneralLedger from "../modules/maintenance/submodules/general_ledger/page/GeneralLedger";
+import Fiscal_Year from "../modules/maintenance/submodules/general_ledger/categories/fiscal_year/Fiscal_Year";
 
 const AppRoutes = () => {
   return (
@@ -22,9 +23,10 @@ const AppRoutes = () => {
       <Route path="/shops" element={<Shops />} />
       <Route path="/reports" element={<Reports />} />
       <Route path="/transport" element={<Transport />} />
-      {/* <Route path="/utilities" element={<Utilities />} /> */}
+      <Route path="/utilities" element={<Utilities />} />
       <Route path="/auditors" element={<Auditors />} />
-
+      <Route path="/maintenance/general-ledger" element={<GeneralLedger />} />
+      <Route path="/maintenance/general-ledger/fiscal-year" element={<Fiscal_Year />} />
     </Routes>
   );
 };

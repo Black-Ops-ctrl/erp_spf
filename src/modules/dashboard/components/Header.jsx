@@ -18,6 +18,12 @@ const Header = () => {
     setIsDropdownOpen(false);
   };
 
+  const handleLogoutClick = () => {
+    console.log("User logged out");
+    setIsDropdownOpen(false);
+    // Add your logout logic here
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -107,11 +113,11 @@ const Header = () => {
               {/* Menu Items */}
               <button
                 onClick={handleChangePassword}
-                className="w-full px-4 py-2 text-left text-sm text-secondary hover:bg-gray-50 transition-colors font-inter flex items-center gap-2"
+                className="w-full px-4 py-2 text-left text-sm text-secondary font-poppins font-[500] hover:bg-gray-50 transition-colors font-inter flex items-center gap-2"
               >
                 {/* Key Icon */}
                 <svg 
-                  className="w-4 h-4 text-yellow-500 flex-shrink-0" 
+                  className="w-5 h-5 text-yellow-500 flex-shrink-0" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -120,22 +126,22 @@ const Header = () => {
                 </svg>
                 <span className="flex-1 text-left">Change Password</span>
               </button>
+
+              {/* Logout Button inside Dropdown */}
+              <button
+                onClick={handleLogoutClick}
+                className="w-full px-4 py-2 text-left text-sm text-secondary font-poppins font-[500] hover:bg-gray-50 transition-colors font-inter flex items-center gap-2 border-t border-gray-100 mt-1"
+              >
+                <img 
+                  src={logoutIcon} 
+                  alt="Logout" 
+                  className="w-5 h-5 object-contain"
+                />
+                <span className="flex-1 text-left">Log out</span>
+              </button>
             </div>
           )}
         </div>
-
-        {/* Logout Button */}
-        <button
-          onClick={handleLogout}
-          className="flex items-center gap-1 px-[10px] py-[6px] rounded-md bg-redColor text-primary font-helvetica text-sm hover:bg-red-700 transition-colors"
-        >
-          <img 
-            src={logoutIcon} 
-            alt="Logout" 
-            className="w-5 h-5 object-contain"
-          />
-          <span className="hidden sm:inline">Log out</span>
-        </button>
       </div>
 
     </div>
